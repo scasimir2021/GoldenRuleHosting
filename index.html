@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Golden Rule Hosting | STR Management & Compliance (Atlanta)</title>
+  <meta name="description" content="Golden Rule Hosting — full‑service Airbnb management and HOA/COA compliance consulting in Metro Atlanta." />
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --panel:#11121a;
+      --text:#e9e9ef;
+      --muted:#b8b8c7;
+      --gold:#d4af37;
+      --silver:#c0c0c0;
+      --line:rgba(255,255,255,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.45);
+      --radius:18px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 70% -10%, rgba(212,175,55,.18), transparent 60%),
+        radial-gradient(900px 500px at -10% 0%, rgba(192,192,192,.10), transparent 60%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    header{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,11,15,.85), rgba(11,11,15,.55));
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; letter-spacing:.2px;
+    }
+    .mark{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(212,175,55,.95), rgba(192,192,192,.45));
+      box-shadow: var(--shadow);
+      display:grid; place-items:center;
+      color:#111;
+      font-weight:900;
+    }
+    .brand small{display:block; font-weight:500; color:var(--muted); letter-spacing:.2px}
+    nav ul{display:flex; gap:14px; padding:0; margin:0; list-style:none; flex-wrap:wrap}
+    nav a{padding:8px 10px; border-radius:12px; color:var(--muted)}
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:14px;
+      background:rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      color:var(--text);
+      cursor:pointer;
+      gap:8px;
+    }
+    .btn:hover{background:rgba(255,255,255,.10)}
+    .btn.gold{
+      background:linear-gradient(135deg, rgba(212,175,55,.95), rgba(212,175,55,.55));
+      color:#120f05;
+      border:1px solid rgba(212,175,55,.65);
+      font-weight:800;
+    }
+    .btn.gold:hover{filter:brightness(1.05)}
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 12px; border-radius:999px;
+      background:rgba(212,175,55,.12);
+      border:1px solid rgba(212,175,55,.25);
+      color:var(--gold);
+      font-weight:700;
+      letter-spacing:.2px;
+    }
+    .hero{
+      padding:44px 0 18px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+    }
+    @media (max-width: 920px){
+      .grid{grid-template-columns:1fr}
+      nav ul{display:none}
+      .hide-sm{display:none}
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height:1.1;
+      letter-spacing:-.6px;
+    }
+    .sub{color:var(--muted); font-size:16px; margin:0 0 18px}
+    .cta-row{display:flex; gap:10px; flex-wrap:wrap}
+    .kpi{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:10px; margin-top:16px;
+    }
+    .kpi .mini{
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.25);
+      border-radius:16px;
+      padding:12px;
+    }
+    .mini b{display:block; font-size:14px}
+    .mini span{color:var(--muted); font-size:12px}
+    section{padding:26px 0}
+    .sec-head{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      margin-bottom:12px;
+    }
+    h2{margin:0; font-size:22px; letter-spacing:-.2px}
+    .muted{color:var(--muted)}
+    .cols-3{
+      display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px;
+    }
+    @media (max-width: 920px){ .cols-3{grid-template-columns:1fr} }
+    .list{
+      margin:10px 0 0; padding:0 0 0 18px; color:var(--muted)
+    }
+    .tag{
+      display:inline-flex; padding:6px 10px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:12px;
+      margin-right:6px;
+      margin-bottom:6px;
+    }
+    .split{
+      display:grid; grid-template-columns:1fr 1fr; gap:12px;
+    }
+    @media (max-width: 920px){ .split{grid-template-columns:1fr} }
+    .table{
+      width:100%;
+      border-collapse:collapse;
+      overflow:hidden;
+      border-radius:16px;
+      border:1px solid var(--line);
+    }
+    .table th,.table td{
+      padding:12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    .table th{color:var(--text); font-size:12px; letter-spacing:.2px; text-transform:uppercase}
+    .table td{color:var(--muted)}
+    .table tr:last-child td{border-bottom:none}
+    footer{
+      border-top:1px solid var(--line);
+      padding:24px 0 40px;
+      color:var(--muted);
+    }
+    .toast{
+      position:fixed;
+      bottom:16px; left:50%;
+      transform:translateX(-50%);
+      background:rgba(17,18,26,.95);
+      border:1px solid var(--line);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      display:none;
+      max-width:min(720px, calc(100vw - 24px));
+      z-index:50;
+    }
+    .modal-backdrop{
+      position:fixed; inset:0; background:rgba(0,0,0,.62);
+      display:none; align-items:center; justify-content:center;
+      padding:16px; z-index:40;
+    }
+    .modal{
+      width:min(860px, 100%);
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:22px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .modal header{
+      position:unset;
+      backdrop-filter:none;
+      background:rgba(0,0,0,.15);
+      border-bottom:1px solid var(--line);
+    }
+    .modal .head{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 16px;
+      gap:12px;
+    }
+    .modal .body{padding:16px}
+    .form{
+      display:grid; gap:12px;
+    }
+    label{font-size:12px; color:var(--muted)}
+    input, select, textarea{
+      width:100%;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.25);
+      color:var(--text);
+      outline:none;
+    }
+    textarea{min-height:110px; resize:vertical}
+    .row2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    @media (max-width: 720px){ .row2{grid-template-columns:1fr} }
+    .small{font-size:12px; color:var(--muted)}
+    .badge{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 10px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.22);
+    }
+    .badge b{color:var(--text); font-size:12px}
+    .badge span{color:var(--muted); font-size:12px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Golden Rule Hosting home">
+        <div class="mark">GR</div>
+        <div>
+          Golden Rule Hosting
+          <small>STR Management + HOA/COA Compliance</small>
+        </div>
+      </a>
+
+      <nav class="hide-sm" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#vendors">Vendors</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#onboarding">Onboarding</a></li>
+          <li><a href="#portal">Client Portal</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <button class="btn" id="btnPortal">Client Login</button>
+        <button class="btn gold" id="btnBook">Book Free Call</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap">
+    <section class="hero">
+      <div class="grid">
+        <div class="card">
+          <div class="pill">Metro Atlanta • Full‑Service • Compliance‑First</div>
+          <h1>Stress‑free Airbnb income—without HOA headaches.</h1>
+          <p class="sub">
+            Golden Rule Hosting combines hospitality excellence with HOA/COA expertise.
+            We manage your short‑term rental end‑to‑end and help you stay compliant with community rules and city requirements.
+          </p>
+          <div class="cta-row">
+            <button class="btn gold" id="btnStart">Start Onboarding</button>
+            <button class="btn" id="btnConsult">Compliance Consult</button>
+            <a class="btn" href="#vendors">Preferred Vendors</a>
+          </div>
+
+          <div class="kpi" aria-label="Key highlights">
+            <div class="mini">
+              <b>Full‑Service Management</b>
+              <span>Pricing, guests, cleanings, restocks, coordination</span>
+            </div>
+            <div class="mini">
+              <b>HOA/COA Document Review</b>
+              <span>Rules clarity + risk flags + action plan</span>
+            </div>
+            <div class="mini">
+              <b>Owner‑Friendly Reporting</b>
+              <span>Monthly updates, performance notes, next steps</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2 style="margin:0 0 8px;">Quick Intake</h2>
+          <p class="muted" style="margin:0 0 12px;">Tell us about your property and we’ll respond with next steps.</p>
+          <form class="form" id="quickIntake">
+            <div class="row2">
+              <div>
+                <label>Owner Name</label>
+                <input name="name" placeholder="Your name" required />
+              </div>
+              <div>
+                <label>Email</label>
+                <input name="email" placeholder="you@email.com" type="email" required />
+              </div>
+            </div>
+            <div class="row2">
+              <div>
+                <label>Property Type</label>
+                <select name="type">
+                  <option>Condo</option>
+                  <option>Townhome</option>
+                  <option>Single-Family</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label>Service Needed</label>
+                <select name="service">
+                  <option>Full-Service Management</option>
+                  <option>Compliance Consulting</option>
+                  <option>Both</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label>Property Location (Neighborhood/City)</label>
+              <input name="location" placeholder="e.g., Midtown / Buckhead / Decatur" />
+            </div>
+            <div>
+              <label>Notes</label>
+              <textarea name="notes" placeholder="Any HOA details, timelines, questions…"></textarea>
+            </div>
+            <button class="btn gold" type="submit">Submit</button>
+            <div class="small">HTML-only demo: form saves locally for now (no server).</div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="sec-head">
+        <h2>Services</h2>
+        <div class="muted">Management + Consulting (HOA/COA‑savvy)</div>
+      </div>
+      <div class="split">
+        <div class="card">
+          <div class="tag">Full‑Service</div>
+          <div class="tag">Hands‑Off</div>
+          <h3 style="margin:10px 0 6px;">STR Property Management</h3>
+          <p class="muted" style="margin:0 0 10px;">We run the day-to-day so you can enjoy truly passive income.</p>
+          <ul class="list">
+            <li>Listing setup/optimization (Airbnb/VRBO)</li>
+            <li>Dynamic pricing strategy + calendar control</li>
+            <li>24/7 guest messaging and issue handling</li>
+            <li>Turnovers: cleaning scheduling + quality checks</li>
+            <li>Supply monitoring + restock coordination</li>
+            <li>Maintenance coordination + vendor dispatch</li>
+            <li>Monthly owner report + recommendations</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="tag">Compliance‑First</div>
+          <div class="tag">HOA/COA</div>
+          <h3 style="margin:10px 0 6px;">STR Compliance Consulting</h3>
+          <p class="muted" style="margin:0 0 10px;">Clarity before you list—especially in regulated communities.</p>
+          <ul class="list">
+            <li>Governing document review (CCRs, bylaws, rules)</li>
+            <li>STR viability & risk assessment</li>
+            <li>Written summary + key sections to reference</li>
+            <li>Action plan: what to do next, what to avoid</li>
+            <li>Permit pathway guidance (as applicable)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="sec-head">
+        <h2>Pricing</h2>
+        <div class="muted">Transparent, simple, and scalable</div>
+      </div>
+
+      <div class="card" style="margin-bottom:12px;">
+        <div class="badge"><b>Intro Offer</b><span>20% management fee for first 3 months (first property)</span></div>
+        <p class="muted" style="margin:10px 0 0;">(You can remove this later. This HTML-only build keeps it editable.)</p>
+      </div>
+
+      <div class="cols-3">
+        <div class="card">
+          <h3 style="margin:0 0 6px;">Full‑Service Management</h3>
+          <p class="muted" style="margin:0 0 10px;"><b style="color:var(--gold)">25%</b> of gross booking revenue</p>
+          <ul class="list">
+            <li>All core hosting + operations</li>
+            <li>Owner reports & optimization</li>
+            <li>Compliance oversight</li>
+          </ul>
+          <p class="small">Cleaning fees typically paid by guest. Repairs billed at cost.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 6px;">Discovery Session</h3>
+          <p class="muted" style="margin:0 0 10px;"><b style="color:var(--gold)">$99</b> (1 hour)</p>
+          <ul class="list">
+            <li>Quick viability + strategy call</li>
+            <li>What to check in HOA docs</li>
+            <li>Next‑steps checklist</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 6px;">Compliance Package</h3>
+          <p class="muted" style="margin:0 0 10px;"><b style="color:var(--gold)">$349</b> (flat)</p>
+          <ul class="list">
+            <li>Doc review + written summary</li>
+            <li>Risk flags + action plan</li>
+            <li>7‑day email support window</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="sec-head">
+        <h2>Portfolio</h2>
+        <div class="muted">Showcase listings (link out to Airbnb/VRBO)</div>
+      </div>
+      <div class="cols-3">
+        <div class="card">
+          <h3 style="margin:0 0 6px;">Property Example #1</h3>
+          <p class="muted" style="margin:0 0 10px;">Midtown • 2BR/2BA • Condo</p>
+          <div class="small">Add photos + a link to the live listing.</div>
+          <p style="margin:10px 0 0;"><a class="btn" href="javascript:void(0)" onclick="toast('Add your Airbnb link here later.')">View Listing</a></p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px;">Property Example #2</h3>
+          <p class="muted" style="margin:0 0 10px;">Buckhead • 1BR/1BA • High‑rise</p>
+          <div class="small">Add your “before/after” story and key wins.</div>
+          <p style="margin:10px 0 0;"><a class="btn" href="javascript:void(0)" onclick="toast('Add your VRBO link here later.')">View Listing</a></p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px;">Property Example #3</h3>
+          <p class="muted" style="margin:0 0 10px;">Decatur • 3BR/2BA • Single‑Family</p>
+          <div class="small">Add photos + guest highlights.</div>
+          <p style="margin:10px 0 0;"><a class="btn" href="javascript:void(0)" onclick="toast('Replace with your listing URL.')">View Listing</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENDORS -->
+    <section id="vendors">
+      <div class="sec-head">
+        <h2>Preferred Vendors</h2>
+        <div class="muted">Promote trusted partners (cleaners, handymen, etc.)</div>
+      </div>
+      <div class="card">
+        <table class="table" aria-label="Preferred vendors list">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Vendor</th>
+              <th>Notes</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="vendorRows">
+            <tr>
+              <td>Cleaning</td>
+              <td>Vendor Name</td>
+              <td>Turnovers + deep cleans (Metro ATL)</td>
+              <td><a class="btn" href="javascript:void(0)" onclick="toast('Replace with vendor URL.')">Visit</a></td>
+            </tr>
+            <tr>
+              <td>Handyman</td>
+              <td>Vendor Name</td>
+              <td>Same‑week fixes, STR‑friendly</td>
+              <td><a class="btn" href="javascript:void(0)" onclick="toast('Replace with vendor URL.')">Visit</a></td>
+            </tr>
+            <tr>
+              <td>Photography</td>
+              <td>Vendor Name</td>
+              <td>Listing photo packages</td>
+              <td><a class="btn" href="javascript:void(0)" onclick="toast('Replace with vendor URL.')">Visit</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small" style="margin:12px 0 0;">
+          Disclaimer: Preferred vendors are independent providers; clients choose vendors at their discretion.
+        </p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="sec-head">
+        <h2>Testimonials</h2>
+        <div class="muted">Social proof (swap placeholders as you collect reviews)</div>
+      </div>
+      <div class="cols-3">
+        <div class="card">
+          <p style="margin:0 0 10px;">“Golden Rule Hosting made this effortless. Communication was fast and professional.”</p>
+          <p class="muted" style="margin:0;">— Owner, Midtown</p>
+        </div>
+        <div class="card">
+          <p style="margin:0 0 10px;">“Finally understood our HOA rules and what we could do. Clear plan and peace of mind.”</p>
+          <p class="muted" style="margin:0;">— Owner, Buckhead</p>
+        </div>
+        <div class="card">
+          <p style="margin:0 0 10px;">“Great turnovers and great guests. We stopped stressing about the details.”</p>
+          <p class="muted" style="margin:0;">— Owner, Decatur</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONBOARDING -->
+    <section id="onboarding">
+      <div class="sec-head">
+        <h2>Client Onboarding</h2>
+        <div class="muted">Start here (intake + next steps)</div>
+      </div>
+      <div class="split">
+        <div class="card">
+          <h3 style="margin:0 0 8px;">1) Choose your path</h3>
+          <p class="muted" style="margin:0 0 10px;">Full management, consulting, or both.</p>
+          <div class="cta-row">
+            <button class="btn gold" onclick="openModal('modalOnboard')">Begin Onboarding</button>
+            <button class="btn" onclick="openModal('modalConsult')">Request Compliance Review</button>
+          </div>
+          <ul class="list">
+            <li>We’ll confirm HOA/COA posture and key restrictions.</li>
+            <li>We’ll propose a setup plan (or takeover plan if already listed).</li>
+            <li>Then we move into agreement + launch checklist.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px;">2) What we’ll ask for</h3>
+          <ul class="list">
+            <li>Property address + basic specs</li>
+            <li>HOA/COA name + governing docs (if available)</li>
+            <li>Owner goals and timeline</li>
+            <li>Current listing links (if already live)</li>
+            <li>Access + vendor preferences</li>
+          </ul>
+          <p class="small">In Phase 2, these uploads will live inside the secure portal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT PORTAL -->
+    <section id="portal">
+      <div class="sec-head">
+        <h2>Client Portal (Member Area)</h2>
+        <div class="muted">HTML-only prototype (auth is local demo)</div>
+      </div>
+
+      <div class="card" id="portalCard">
+        <div id="portalLoggedOut">
+          <p class="muted" style="margin:0 0 12px;">
+            The client portal is planned as a “Vantaca‑style” dashboard for messaging, document sharing, and tasks.
+            For this HTML-only version, login is simulated in your browser.
+          </p>
+          <button class="btn gold" onclick="openModal('modalLogin')">Login to Portal</button>
+          <p class="small" style="margin-top:10px;">Tip: Use any email + password in this demo.</p>
+        </div>
+
+        <div id="portalLoggedIn" style="display:none;">
+          <div class="sec-head" style="margin-bottom:10px;">
+            <div>
+              <h3 style="margin:0 0 4px;">Owner Dashboard</h3>
+              <div class="small" id="portalUserLine"></div>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn" onclick="openModal('modalUpload')">Upload a Document</button>
+              <button class="btn" onclick="openModal('modalMessage')">Send a Message</button>
+              <button class="btn" onclick="logout()">Log Out</button>
+            </div>
+          </div>
+
+          <div class="split">
+            <div class="card">
+              <h4 style="margin:0 0 8px;">Documents</h4>
+              <div class="small muted">Local demo list (Phase 2: real uploads + permissions)</div>
+              <ul class="list" id="docList" style="margin-top:10px;"></ul>
+            </div>
+
+            <div class="card">
+              <h4 style="margin:0 0 8px;">Messages</h4>
+              <div class="small muted">Local demo threads (Phase 2: ticketing + notifications)</div>
+              <ul class="list" id="msgList" style="margin-top:10px;"></ul>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:12px;">
+            <h4 style="margin:0 0 8px;">Tasks</h4>
+            <div class="small muted">Starter checklist (editable)</div>
+            <ul class="list" id="taskList" style="margin-top:10px;"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <div class="brand" style="margin-bottom:8px;">
+              <div class="mark">GR</div>
+              <div>
+                Golden Rule Hosting
+                <small>Metro Atlanta</small>
+              </div>
+            </div>
+            <div class="small">Full‑Service STR Management • HOA/COA Compliance Consulting</div>
+          </div>
+          <div>
+            <div class="small"><b style="color:var(--text);">Contact</b></div>
+            <div class="small">Email: brandi@goldenrulehosting.com</div>
+            <div class="small">Service Area: Metro Atlanta</div>
+            <div class="small">Website: (add domain)</div>
+          </div>
+        </div>
+        <div class="small" style="margin-top:14px;">© <span id="year"></span> Golden Rule Hosting. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<!-- MODALS -->
+<div class="modal-backdrop" id="modalOnboard" role="dialog" aria-modal="true" aria-label="Onboarding form">
+  <div class="modal">
+    <header>
+      <div class="head">
+        <strong>Client Onboarding</strong>
+        <button class="btn" onclick="closeModal('modalOnboard')">Close</button>
+      </div>
+    </header>
+    <div class="body">
+      <form class="form" id="onboardForm">
+        <div class="row2">
+          <div><label>Owner Name</label><input name="name" required placeholder="Owner name"></div>
+          <div><label>Email</label><input name="email" required type="email" placeholder="you@email.com"></div>
+        </div>
+        <div class="row2">
+          <div><label>Phone</label><input name="phone" placeholder="(optional)"></div>
+          <div><label>Preferred Service</label>
+            <select name="service">
+              <option>Full-Service Management</option>
+              <option>Compliance Consulting</option>
+              <option>Both</option>
+            </select>
+          </div>
+        </div>
+        <div class="row2">
+          <div><label>Property Address</label><input name="address" placeholder="Street, City, GA"></div>
+          <div><label>HOA/COA Name</label><input name="hoa" placeholder="(if applicable)"></div>
+        </div>
+        <div class="row2">
+          <div><label>Beds</label><input name="beds" type="number" min="0" placeholder="e.g., 2"></div>
+          <div><label>Baths</label><input name="baths" type="number" min="0" step="0.5" placeholder="e.g., 2"></div>
+        </div>
+        <div>
+          <label>Current Listing Links (Airbnb/VRBO)</label>
+          <input name="links" placeholder="Paste URLs (optional)">
+        </div>
+        <div>
+          <label>Notes / Goals</label>
+          <textarea name="notes" placeholder="Revenue goals, timeline, constraints, HOA concerns…"></textarea>
+        </div>
+        <button class="btn gold" type="submit">Submit Onboarding</button>
+        <div class="small">Saved locally in your browser (HTML-only). Replace with backend later.</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalConsult" role="dialog" aria-modal="true" aria-label="Compliance consult request">
+  <div class="modal">
+    <header>
+      <div class="head">
+        <strong>Compliance Consult Request</strong>
+        <button class="btn" onclick="closeModal('modalConsult')">Close</button>
+      </div>
+    </header>
+    <div class="body">
+      <form class="form" id="consultForm">
+        <div class="row2">
+          <div><label>Name</label><input name="name" required placeholder="Your name"></div>
+          <div><label>Email</label><input name="email" required type="email" placeholder="you@email.com"></div>
+        </div>
+        <div class="row2">
+          <div><label>HOA/COA (if known)</label><input name="hoa" placeholder="Name"></div>
+          <div><label>Property Type</label>
+            <select name="type">
+              <option>Condo</option><option>Townhome</option><option>Single-Family</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label>What do you need help with?</label>
+          <textarea name="notes" placeholder="e.g., Can I do STR here? What are the restrictions? What’s the best approach?"></textarea>
+        </div>
+        <button class="btn gold" type="submit">Request Consult</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalLogin" role="dialog" aria-modal="true" aria-label="Client portal login">
+  <div class="modal">
+    <header>
+      <div class="head">
+        <strong>Client Portal Login</strong>
+        <button class="btn" onclick="closeModal('modalLogin')">Close</button>
+      </div>
+    </header>
+    <div class="body">
+      <form class="form" id="loginForm">
+        <div class="row2">
+          <div><label>Email</label><input name="email" required type="email" placeholder="you@email.com"></div>
+          <div><label>Password</label><input name="password" required type="password" placeholder="••••••••"></div>
+        </div>
+        <button class="btn gold" type="submit">Login</button>
+        <div class="small">Demo-only auth (localStorage). Replace with real auth later.</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalUpload" role="dialog" aria-modal="true" aria-label="Upload document">
+  <div class="modal">
+    <header>
+      <div class="head">
+        <strong>Upload Document (Demo)</strong>
+        <button class="btn" onclick="closeModal('modalUpload')">Close</button>
+      </div>
+    </header>
+    <div class="body">
+      <form class="form" id="uploadForm">
+        <div class="row2">
+          <div><label>Document Name</label><input name="title" required placeholder="e.g., HOA Bylaws"></div>
+          <div><label>Type</label>
+            <select name="type">
+              <option>HOA/COA Docs</option>
+              <option>Permit</option>
+              <option>Agreement</option>
+              <option>Receipt</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div><label>Notes</label><textarea name="notes" placeholder="Optional notes…"></textarea></div>
+        <button class="btn gold" type="submit">Save</button>
+        <div class="small">No real file upload in HTML-only mode—stores a record locally.</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalMessage" role="dialog" aria-modal="true" aria-label="Send message">
+  <div class="modal">
+    <header>
+      <div class="head">
+        <strong>Send a Message (Demo)</strong>
+        <button class="btn" onclick="closeModal('modalMessage')">Close</button>
+      </div>
+    </header>
+    <div class="body">
+      <form class="form" id="messageForm">
+        <div class="row2">
+          <div><label>Category</label>
+            <select name="category">
+              <option>Question</option>
+              <option>Maintenance Request</option>
+              <option>Approval Needed</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div><label>Priority</label>
+            <select name="priority">
+              <option>Normal</option>
+              <option>High</option>
+              <option>Urgent</option>
+            </select>
+          </div>
+        </div>
+        <div><label>Message</label><textarea name="body" required placeholder="Write your message…"></textarea></div>
+        <button class="btn gold" type="submit">Send</button>
+        <div class="small">Stores locally in this prototype.</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  // --- Helpers ---
+  const $ = (sel) => document.querySelector(sel);
+  const yearEl = document.getElementById('year');
+  yearEl.textContent = new Date().getFullYear();
+
+  function toast(msg){
+    const t = $("#toast");
+    t.textContent = msg;
+    t.style.display = "block";
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(()=> t.style.display="none", 2200);
+  }
+
+  function openModal(id){ document.getElementById(id).style.display = "flex"; }
+  function closeModal(id){ document.getElementById(id).style.display = "none"; }
+
+  // Close modal on backdrop click
+  document.querySelectorAll(".modal-backdrop").forEach(b=>{
+    b.addEventListener("click", (e)=>{ if(e.target === b) b.style.display="none"; });
+  });
+
+  // --- Demo storage keys ---
+  const K = {
+    intake: "grh_intake",
+    onboard: "grh_onboard",
+    consult: "grh_consult",
+    session: "grh_session",
+    docs: "grh_docs",
+    msgs: "grh_msgs",
+    tasks: "grh_tasks",
+  };
+
+  function read(key, fallback){
+    try { return JSON.parse(localStorage.getItem(key) || "null") ?? fallback; }
+    catch { return fallback; }
+  }
+  function write(key, value){ localStorage.setItem(key, JSON.stringify(value)); }
+
+  // Seed tasks once
+  if(!localStorage.getItem(K.tasks)){
+    write(K.tasks, [
+      {t:"Confirm HOA/COA STR policy + key restrictions", done:false},
+      {t:"Collect/verify governing docs (CCRs, bylaws, rules)", done:false},
+      {t:"Smart lock setup + access strategy", done:false},
+      {t:"Cleaner onboarding + turnover checklist", done:false},
+      {t:"Listing photos + description draft", done:false},
+      {t:"Launch pricing rules + minimum stay settings", done:false},
+    ]);
+  }
+
+  // --- Forms ---
+  $("#quickIntake").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const all = read(K.intake, []);
+    all.unshift({...data, ts: Date.now()});
+    write(K.intake, all);
+    e.target.reset();
+    toast("Submitted! (Saved locally in this demo.)");
+  });
+
+  $("#onboardForm").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const all = read(K.onboard, []);
+    all.unshift({...data, ts: Date.now()});
+    write(K.onboard, all);
+    e.target.reset();
+    closeModal("modalOnboard");
+    toast("Onboarding submitted! (Local demo saved.)");
+  });
+
+  $("#consultForm").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const all = read(K.consult, []);
+    all.unshift({...data, ts: Date.now()});
+    write(K.consult, all);
+    e.target.reset();
+    closeModal("modalConsult");
+    toast("Consult request saved (local demo).");
+  });
+
+  // --- Portal ---
+  function setSession(session){
+    if(session) write(K.session, session);
+    else localStorage.removeItem(K.session);
+    renderPortal();
+  }
+
+  function renderPortal(){
+    const s = read(K.session, null);
+    const out = $("#portalLoggedOut");
+    const inn = $("#portalLoggedIn");
+    if(!s){
+      out.style.display = "block";
+      inn.style.display = "none";
+      return;
+    }
+    out.style.display = "none";
+    inn.style.display = "block";
+    $("#portalUserLine").textContent = `Logged in as ${s.email}`;
+
+    // Docs
+    const docs = read(K.docs, []);
+    const docList = $("#docList");
+    docList.innerHTML = "";
+    if(!docs.length){
+      const li = document.createElement("li");
+      li.textContent = "No documents yet.";
+      docList.appendChild(li);
+    } else {
+      docs.forEach(d=>{
+        const li = document.createElement("li");
+        const date = new Date(d.ts).toLocaleString();
+        li.textContent = `${d.title} (${d.type}) — ${date}`;
+        docList.appendChild(li);
+      });
+    }
+
+    // Messages
+    const msgs = read(K.msgs, []);
+    const msgList = $("#msgList");
+    msgList.innerHTML = "";
+    if(!msgs.length){
+      const li = document.createElement("li");
+      li.textContent = "No messages yet.";
+      msgList.appendChild(li);
+    } else {
+      msgs.forEach(m=>{
+        const li = document.createElement("li");
+        const date = new Date(m.ts).toLocaleString();
+        li.textContent = `[${m.priority}] ${m.category}: ${m.body.slice(0,80)}${m.body.length>80?"…":""} — ${date}`;
+        msgList.appendChild(li);
+      });
+    }
+
+    // Tasks
+    const tasks = read(K.tasks, []);
+    const taskList = $("#taskList");
+    taskList.innerHTML = "";
+    tasks.forEach((t, idx)=>{
+      const li = document.createElement("li");
+      li.style.marginBottom = "8px";
+      li.innerHTML = `
+        <label style="display:flex; gap:10px; align-items:flex-start;">
+          <input type="checkbox" ${t.done?"checked":""} data-idx="${idx}" style="margin-top:4px;">
+          <span>${t.t}</span>
+        </label>
+      `;
+      taskList.appendChild(li);
+    });
+    taskList.querySelectorAll("input[type=checkbox]").forEach(cb=>{
+      cb.addEventListener("change", ()=>{
+        const i = Number(cb.getAttribute("data-idx"));
+        const tasks = read(K.tasks, []);
+        tasks[i].done = cb.checked;
+        write(K.tasks, tasks);
+      });
+    });
+  }
+
+  $("#loginForm").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    setSession({email: data.email, ts: Date.now()});
+    e.target.reset();
+    closeModal("modalLogin");
+    toast("Logged in (demo).");
+  });
+
+  function logout(){ setSession(null); toast("Logged out."); }
+
+  $("#uploadForm").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const docs = read(K.docs, []);
+    docs.unshift({...data, ts: Date.now()});
+    write(K.docs, docs);
+    e.target.reset();
+    closeModal("modalUpload");
+    toast("Document saved (demo).");
+    renderPortal();
+  });
+
+  $("#messageForm").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const msgs = read(K.msgs, []);
+    msgs.unshift({...data, ts: Date.now()});
+    write(K.msgs, msgs);
+    e.target.reset();
+    closeModal("modalMessage");
+    toast("Message saved (demo).");
+    renderPortal();
+  });
+
+  // Top buttons
+  $("#btnBook").addEventListener("click", ()=> toast("Hook this to Calendly or your booking link."));
+  $("#btnStart").addEventListener("click", ()=> openModal("modalOnboard"));
+  $("#btnConsult").addEventListener("click", ()=> openModal("modalConsult"));
+  $("#btnPortal").addEventListener("click", ()=> openModal("modalLogin"));
+
+  // Initial render
+  renderPortal();
+</script>
+</body>
+</html>
