@@ -137,7 +137,7 @@
     }
     @media (max-width: 920px){ .cols-3{grid-template-columns:1fr} }
     .list{
-      margin:10px 0 0; padding:0 0 0 18px; color:var(--muted)
+      margin:10px 0 0; padding:0; list-style:none; color:var(--muted)
     }
     .tag{
       display:inline-flex; padding:6px 10px; border-radius:999px;
@@ -958,11 +958,11 @@
     taskList.innerHTML = "";
     tasks.forEach((t, idx)=>{
       const li = document.createElement("li");
-      li.style.marginBottom = "8px";
+      li.style.cssText = "margin-bottom:10px; padding:8px 12px; background:rgba(255,255,255,.03); border-radius:8px; border:1px solid rgba(255,255,255,.05);";
       li.innerHTML = `
-        <label style="display:flex; gap:10px; align-items:flex-start;">
-          <input type="checkbox" ${t.done?"checked":""} data-idx="${idx}" style="margin-top:4px;">
-          <span>${t.t}</span>
+        <label style="display:flex; gap:12px; align-items:center; cursor:pointer;">
+          <input type="checkbox" ${t.done?"checked":""} data-idx="${idx}" style="flex-shrink:0; width:18px; height:18px; cursor:pointer;">
+          <span style="flex:1; ${t.done?'text-decoration:line-through; opacity:0.6;':''}">${t.t}</span>
         </label>
       `;
       taskList.appendChild(li);
